@@ -1,0 +1,24 @@
+info:
+  contact: {}
+paths:
+  /auth:
+    get:
+      parameters:
+      - description: username
+        in: query
+        name: username
+        required: true
+        type: string
+      - description: password
+        in: query
+        name: password
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"code":200,"data":{},"msg":"ok"}'
+          schema:
+            type: string
+      summary: 登陆
+swagger: "2.0"
