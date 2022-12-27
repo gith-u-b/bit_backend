@@ -1,18 +1,20 @@
 info:
   contact: {}
 paths:
-  /auth:
-    get:
+  /manage/auth:
+    post:
       parameters:
       - description: username
-        in: query
+        in: body
         name: username
         required: true
-        type: string
+        schema:
+          type: string
       - description: password
-        in: query
+        in: body
         name: password
-        type: integer
+        schema:
+          type: string
       produces:
       - application/json
       responses:

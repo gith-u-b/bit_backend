@@ -21,7 +21,7 @@ func InitRouter() *gin.Engine {
 
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 
-	r.GET("/auth", api.GetAuth)
+	r.POST("/manage/auth", api.Auth)
 
 	return r
 }

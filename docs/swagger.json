@@ -4,25 +4,29 @@
         "contact": {}
     },
     "paths": {
-        "/auth": {
-            "get": {
+        "/manage/auth": {
+            "post": {
                 "produces": [
                     "application/json"
                 ],
                 "summary": "登陆",
                 "parameters": [
                     {
-                        "type": "string",
                         "description": "username",
                         "name": "username",
-                        "in": "query",
-                        "required": true
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
                     },
                     {
-                        "type": "integer",
                         "description": "password",
                         "name": "password",
-                        "in": "query"
+                        "in": "body",
+                        "schema": {
+                            "type": "string"
+                        }
                     }
                 ],
                 "responses": {

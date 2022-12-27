@@ -19,13 +19,13 @@ type auth struct {
 
 // @Summary 登陆
 // @Produce  json
-// @Param username query string true "username"
-// @Param password query int false "password"
+// @Param username body string true "username"
+// @Param password body string false "password"
 // @Success 200 {string} json "{"code":200,"data":{},"msg":"ok"}"
-// @Router /auth [get]
-func GetAuth(c *gin.Context) {
-	username := c.Query("username")
-	password := c.Query("password")
+// @Router /manage/auth [post]
+func Auth(c *gin.Context) {
+	username := c.PostForm("username")
+	password := c.PostForm("password")
 
 	valid := validation.Validation{}
 	a := auth{Username: username, Password: password}

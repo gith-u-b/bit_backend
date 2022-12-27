@@ -1,0 +1,7 @@
+# 启动服务
+$ go run main.go
+
+# 重新生成swagger
+$ swag init
+
+[访问swagger](http://127.0.0.1:8000/swagger/index.html)
