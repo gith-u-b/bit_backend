@@ -37,6 +37,7 @@ require (
 	github.com/swaggo/gin-swagger v1.5.3 // indirect
 	github.com/swaggo/swag v1.8.9 // indirect
 	github.com/ugorji/go/codec v1.2.7 // indirect
+	github.com/unknwon/com v1.0.1 // indirect
 	golang.org/x/crypto v0.4.0 // indirect
 	golang.org/x/net v0.4.0 // indirect
 	golang.org/x/sys v0.3.0 // indirect
@@ -50,8 +51,10 @@ require (
 replace (
 	github.com/sai1024/bit_backend/conf => ./workspace/bit_backend/pkg/conf
 	github.com/sai1024/bit_backend/middleware => ./workspace/bit_backend/middleware
+	github.com/sai1024/bit_backend/middleware/jwt => ./workspace/bit_backend/middleware/jwt
 	github.com/sai1024/bit_backend/models => ./workspace/bit_backend/models
 	github.com/sai1024/bit_backend/pkg/e => ./workspace/bit_backend/pkg/e
+	github.com/sai1024/bit_backend/pkg/util => ./workspace/bit_backend/pkg/util
 	github.com/sai1024/bit_backend/pkg/setting => ./workspace/bit_backend/pkg/setting
 	github.com/sai1024/bit_backend/routers => ./workspace/bit_backend/routers
 )

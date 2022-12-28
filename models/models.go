@@ -57,6 +57,7 @@ func init() {
 
 	// migrate
 	db.AutoMigrate(Auth{})
+	db.AutoMigrate(RedeemCode{})
 }
 
 func CloseDB() {
